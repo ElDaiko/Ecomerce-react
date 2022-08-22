@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Container = ({title, subtitle}) => {
+const ItemListContainer = ({title, subtitle}) => {
     console.log(title)
     return (
         <h1>Hello World!</h1>
     );
 }
 
-export default Container;
+export default ItemListContainer
