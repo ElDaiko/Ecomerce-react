@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from './navbar';
-import Container from './container';
+import Navbar from './Navbar';
+import Container from './Container';
 
 //conectar mi html con el react
 function App() {

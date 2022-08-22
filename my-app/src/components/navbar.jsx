@@ -1,6 +1,7 @@
 import React from "react";
+import Cart from "./Cart";
 import Form  from "./Form";
-import { FaCartPlus } from 'react-icons/fa';
+
 
 
 
@@ -17,11 +18,9 @@ function Navbar() {
                 <li className="nav-item">
                   <a className="nav-link" href="#">Features</a>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#"><FaCartPlus/></a>
-                </li>
               </ul>
-              <Form contBuscar="Products"/>
+              <Cart/>
+              {/*<Form contBuscar="Products"/>*/}
             </div>
           </div>
         </nav>
