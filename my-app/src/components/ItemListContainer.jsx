@@ -1,9 +1,8 @@
 import React from 'react';
 
-const ItemListContainer = ({title, subtitle}) => {
-    console.log(title)
+const ItemListContainer = ({title}) => {
     return (
-        <h1>Hello World!</h1>
+        <h1 className='text'>{title}</h1>
     );
 }
 
