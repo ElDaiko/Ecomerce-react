@@ -1,5 +1,5 @@
 import {React, useState} from 'react';
-import Navbar from './Nasvbar';
+import Navbar from './Navbar';
 import ItemListContainer from './ItemListContainer';
 
 //conectar mi html con el react
