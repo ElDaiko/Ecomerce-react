@@ -11,3 +11,7 @@
   font-size: 50px;
   margin: 0%;
 }
+
+.flex-row{
+  display: flex;
+}

@@ -1,8 +1,14 @@
 import React from 'react';
+import ItemCount from './ItemCount';
 
-const ItemListContainer = ({title}) => {
+const ItemListContainer = () => {
+    function onAdd(cont){
+        console.log("se han confirmado", cont, "productos")
+    }
     return (
-        <h1 className='text'>{title}</h1>
+        <div>
+            <ItemCount stock={10} onAdd={onAdd}/>
+        </div>
     );
 }
 
