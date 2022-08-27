@@ -8,7 +8,7 @@ function App() {
   return (
     <>
         <Navbar />
-        <ItemListContainer title="Bendu clothing"/>
+        <ItemListContainer/>
     </>
   );
 }
