@@ -15,3 +15,32 @@
 .flex-row{
   display: flex;
 }
+
+.btncont{
+  max-width: 15%;
+  text-align: center;
+}
+
+.btn:active{
+  background-color: #eab0d2;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hoodie{
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  background-image: url(img/hoodiejpn.png);
+  padding: 118px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  padding-bottom: 100%;
+  padding-top: 3%;
+}
+
+.cardcontainer{
+  padding-top: 1%;
+  padding-left: 1%;
+}
