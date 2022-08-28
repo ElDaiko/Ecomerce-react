@@ -21,7 +21,7 @@ const ItemCount = ({ stock, onAdd, onReset }) => {
                 <button className='btn' onClick={() => onReset()}>Reset</button>
             </div>
             <div>
-                <button className='btn' onClick={() => onAdd(cont)}>Confirmar</button>
+                <button className="btn" onClick={() => onAdd(cont)}>Confirmar</button>
             </div>
         </div>
 

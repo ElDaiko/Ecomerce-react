@@ -7,8 +7,10 @@ const ItemListContainer = () => {
     const [stock, setStock] = useState(10)
 
     function onAdd(cont){
-        console.log("se han confirmado", cont, "productos")
-        setStock(stock - cont)
+        if(stock > 0 && cont < stock){
+            console.log("se han confirmado", cont, "productos")
+            setStock(stock - cont)
+        }
 
     }
 
