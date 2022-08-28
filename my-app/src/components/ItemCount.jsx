@@ -1,21 +1,24 @@
 import { React } from 'react';
 import UseCont from '../hooks/useCont';
+import { FaRedo, FaCheckCircle} from 'react-icons/fa';
 const ItemCount = ({ stock, onAdd, onReset }) => {
 
     const { add, sub, cont } = UseCont(stock)
 
     return (
         <div className='cardcontainer'>
+            
             <div className="card text-white bg-primary mb-3 btncont">
+            <button className='btn' onClick={() => onReset()}><FaRedo/></button>
                 <div className="hoodie"></div>
                 <div>
                     <p>Stock: {stock} </p>
-                    <button className='btn' onClick={add}>+</button>
+                    <button className='btn margin' onClick={sub}>-</button>
                     {cont}
-                    <button className='btn' onClick={sub}>-</button>
+                    <button className='btn margin' onClick={add}>+</button>
                 </div>
-                <button className="btn" onClick={() => onAdd(cont)}>Confirm</button>
-                <button className='btn' onClick={() => onReset()}>Reset</button>
+                <button className="btn" onClick={() => onAdd(cont)}><FaCheckCircle/></button>
+                
             </div>
         </div>
     );

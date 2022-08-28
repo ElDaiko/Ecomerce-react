@@ -44,3 +44,13 @@
   padding-top: 1%;
   padding-left: 1%;
 }
+
+.margin{
+  margin-left: 5%;
+  margin-right: 5%;
+  font-weight: bold;
+}
+
+p{
+  font-weight: bold;
+}
