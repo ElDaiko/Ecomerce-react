@@ -7,23 +7,16 @@ const ItemCount = ({ stock, onAdd, onReset }) => {
     return (
         <div className='cardcontainer'>
             <div className="card text-white bg-primary mb-3 btncont">
-            <div className="hoodie"></div>
-            <div>
-                <p>Stock: {stock} </p>
-
-                <p>
-                    Cart: {cont}
-                </p>
-                <button className='btn' onClick={add}>
-                    +
-                </button>
-                <button className='btn' onClick={sub}>
-                    -
-                </button>
+                <div className="hoodie"></div>
+                <div>
+                    <p>Stock: {stock} </p>
+                    <button className='btn' onClick={add}>+</button>
+                    {cont}
+                    <button className='btn' onClick={sub}>-</button>
+                </div>
+                <button className="btn" onClick={() => onAdd(cont)}>Confirm</button>
+                <button className='btn' onClick={() => onReset()}>Reset</button>
             </div>
-            <button className='btn' onClick={() => onReset()}>Reset</button>
-            <button className="btn" onClick={() => onAdd(cont)}>Confirm</button>
-        </div>
         </div>
     );
 
