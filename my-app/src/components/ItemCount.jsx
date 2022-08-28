@@ -1,8 +1,8 @@
 import {React} from 'react';
 import UseCont from '../hooks/useCont';
-const ItemCount = ({ stock, onAdd }) => {
+const ItemCount = ({ stock, onAdd, onReset }) => {
 
-    const {add, sub, res, cont} = UseCont(stock)
+    const {add, sub, cont} = UseCont(stock)
 
     return (
 
@@ -18,9 +18,7 @@ const ItemCount = ({ stock, onAdd }) => {
                 <button className='btn' onClick={sub}>
                     -
                 </button>
-                <button className='btn' onClick={res}>
-                    Reset
-                </button>
+                <button className='btn' onClick={() => onReset()}>Reset</button>
             </div>
             <div>
                 <button className='btn' onClick={() => onAdd(cont)}>Confirmar</button>

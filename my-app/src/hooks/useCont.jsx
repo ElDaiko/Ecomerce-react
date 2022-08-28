@@ -19,12 +19,8 @@ const UseCont = (stock, onAdd) => {
 
     }
 
-    function res() {
-        setCont(0)
-    }
-
     return {
-        add, sub, res, cont
+        add, sub, cont
     };
 }
 

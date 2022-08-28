@@ -11,9 +11,15 @@ const ItemListContainer = () => {
         setStock(stock - cont)
 
     }
+
+    function onReset(){
+        console.log("se han resetado las adiciones")
+        setStock(10)
+    }
+
     return (
         <div>
-            <ItemCount stock={stock} onAdd={onAdd}/>
+            <ItemCount stock={stock} onAdd={onAdd} onReset={onReset}/>
         </div>
     );
 }
