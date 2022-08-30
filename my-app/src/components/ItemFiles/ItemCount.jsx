@@ -1,5 +1,5 @@
 import { React } from 'react';
-import UseCont from '../hooks/useCont';
+import UseCont from '../../hooks/useCont';
 import { FaRedo, FaCheckCircle } from 'react-icons/fa';
 const ItemCount = ({ stock, onAdd, onReset }) => {
 

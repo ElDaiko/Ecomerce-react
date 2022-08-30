@@ -1,9 +1,9 @@
-import { React, useState, useEffect } from 'react';
+/* import { React, useState, useEffect } from 'react';
+
 
 const productos = [
     { id: 1, nombre: "Hoodie Bendu", material: "Algodon", precio: 180.000, stock: 10 },
 ]
-
 function consultarPromesa(confirmacion) {
 
     return new Promise((res, rej) => {
@@ -16,7 +16,7 @@ function consultarPromesa(confirmacion) {
 
 }
 
-const Item = () => {
+const ItemList = () => {
 
     const [productos, setProductos] = useState([]);
     useEffect(() => {
@@ -48,5 +48,5 @@ const Item = () => {
     );
 }
 
-export default Item;
+export default ItemList; */
 

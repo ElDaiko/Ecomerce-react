@@ -18,6 +18,7 @@ const ItemListContainer = () => {
         console.log("se han resetado las adiciones")
         setStock(10)
     }
+    
 
     return (
         <div>
