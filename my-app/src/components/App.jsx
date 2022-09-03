@@ -1,17 +1,59 @@
 import {React} from 'react';
+import Shop from './HomePage/Bendushop';
 import Navbar from './Navbar/Navbar';
 import ItemListContainer from './ItemFiles/ItemListContainer';
-import ItemList from './ItemFiles/ItemList';
+import Footers from './Footer/Bendufooter';
+import Tees from './HomePage/Bendutees';
+import Home from './HomePage/Benduhome';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
 
 //conectar mi html con el react
-function App() {
 
+
+const Navhome = () => {
   return (
-    <>
-        <Navbar />
-        <ItemListContainer/>
-        <ItemList/>
-    </>
+    <div className="body">
+      <div className="body1">
+        <div className="App">
+          <Navbar />
+          <Home />
+        </div>
+      </div>
+      <div className="container2">
+        <Shop />
+      </div>
+      <Footers />
+    </div>
+  )
+}
+
+
+
+function App() {
+  return (
+    <Router>  
+      <Routes>
+        <Route path="tees"
+          element={
+            <Tees />
+          } />
+        <Route path="/"
+          element={
+            <Navhome />
+          } />
+        <Route path="/itemList"
+          element={
+            <ItemListContainer/>
+          } />
+      </Routes>
+    </Router>
   );
 }
 

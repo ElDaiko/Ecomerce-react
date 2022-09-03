@@ -29,10 +29,11 @@ const ItemList = () => {
             })
     }, []);
 
+    
 
     return (
         <div className='cardcontainer2'>         
-            {productos.map((item) => (<Item key={item} producto={item} />))}     
+            {productos.map((item) => (<Item key={item.id} producto={item} />))}     
         </div>
     );
 }

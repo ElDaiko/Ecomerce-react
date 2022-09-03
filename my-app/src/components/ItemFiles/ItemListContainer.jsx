@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCount from './ItemCount';
 import {useState} from 'react';
+import ItemList from './ItemList';
 
 const ItemListContainer = () => {
 
@@ -23,6 +24,7 @@ const ItemListContainer = () => {
     return (
         <div>
             <ItemCount stock={stock} onAdd={onAdd} onReset={onReset}/>
+            <ItemList/>
         </div>
     );
 }

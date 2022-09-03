@@ -65,4 +65,223 @@
 
 p{
   font-weight: bold;
+  font-family: initial;
+}
+
+.container2{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  margin: 0;
+}
+
+@font-face {
+  font-family: Nikumaru;
+  src: url(font/07é╔é¡é▄éÚâtâHâôâg.otf);
+}
+
+@font-face {
+  font-family: Rounded;
+  src: url(font/Corporate-Logo-Rounded.otf);
+}
+
+nav{
+  text-align: left;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+nav a{
+  text-decoration: none;
+  color: antiquewhite;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text1{
+  color: antiquewhite;
+  padding-left: 44%;
+  font-size: 50px;
+  margin: 0%;
+  padding-bottom: 25%;
+}
+
+.container{
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+
+.body1{
+  background-color: #2F3035;
+  background-image: url(img/Highest-Mountain-In-The-World-Mount-Fuji.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container2{
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shoptil{
+  margin: 80px auto 0 auto;
+  text-align: center;
+}
+
+h2{
+  color: rgb(0, 0, 0);
+  font-size: 42px;
+  font-weight: bold;
+  font-family: initial;
+}
+
+hr{
+  width: 200px;
+  color: black;
+  text-align: center;
+  margin-left: 45%;
+  height: 1px;
+}
+
+.boxes33{
+  padding-bottom: 170px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3em;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4%;
+}
+
+.boxes33 > div{
+  width: 80%;
+  height: 200%;
+  border-radius: 25px;
+  background-color: rgba(217, 244, 245, 0.415);
+  padding: 18px;
+  box-shadow: 0px 0px 10px black;
+  margin: 80px auto 40px auto;
+}
+
+.boxes33 > div:hover{
+  transition: 0.25 ease-in;
+  background-color: #ffffff
+}
+
+footer p{
+  font-size: 10px;
+  text-align: center;
+  color: rgb(24, 23, 23);
+}
+
+.tees{
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+  font-family: Nikumaru;
+  font-size: 30px;
+  background-image: url(img/teejpn.png);
+  background-repeat: no-repeat;
+  padding: 140px;
+  background-position: center;
+  background-size: 100%;
+  padding-bottom: 100%;
+    padding-top: 3%;
+}
+
+.tees:active {
+  background-color: #b0dfea;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hodies{
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+  font-family: Nikumaru;
+  font-size: 30px;
+  background-image: url(img/hoodiejpn.png);
+  padding: 118px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  padding-bottom: 100%;
+  padding-top: 3%;
+}
+
+.hodies:active {
+  background-color: #b0dfea;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.shorts{
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+  font-family: Nikumaru;
+  font-size: 30px;
+  background-image: url(img/shortsjpn.png);
+  padding: 125px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 100%;
+  padding-top: 3%;
+}
+
+.shorts:active {
+  background-color: #b0dfea;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.jpan2 {
+  margin-bottom: 13px;
+  margin-top: -18px;
+  font-family: Nikumaru;
+  font-size: 30px;
+  color: black;
+}
+
+.boxes33 a{
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: auto;
+}
+
+
+.bg-dark {
+  --bs-bg-opacity: ;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+}
+
+.navbar {
+  --bs-navbar-padding-x: -1;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 42px;
 }
