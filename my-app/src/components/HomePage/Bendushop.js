@@ -16,7 +16,7 @@ const Shop = () =>{
                 <Link to = "/tees">
                     <button className="shorts">Shorts</button>
                 </Link>
-                <Link to = "/tees">
+                <Link to = "/itemList">
                     <button className="hodies">Hoddies</button>
                 </Link>
             </div> 
