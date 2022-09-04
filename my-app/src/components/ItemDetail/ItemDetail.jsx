@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const ItemDetail = ({details}) => {
     return (
@@ -10,9 +9,6 @@ const ItemDetail = ({details}) => {
                 <p className="card-text">Material: {details.material}</p>
                 <p className="card-text">Stock: {details.stock}</p> 
             </div>
-            <Link  className='btn' to = {`ItemDetail/${details.id}`}>
-                    Details
-            </Link> 
         </div>
     );
 }

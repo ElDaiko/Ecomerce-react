@@ -23,7 +23,8 @@ const Navhome = () => {
     <div className="body">
       <div className="body1">
         <div className="App">
-          <Navbar />
+      
+          <Navbar/>
           <Home />
         </div>
       </div>
@@ -52,7 +53,7 @@ function App() {
           element={
             <ItemListContainer/>
           } />
-         <Route path="/itemDetail"
+         <Route path="/itemList/ItemDetail/:id"
           element={
             <ItemDetailContainer/>
           } />

@@ -2,6 +2,7 @@ import React from 'react';
 import {productoStock} from '../../mocks/MockData'
 import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
+import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
 
@@ -18,14 +19,16 @@ const ItemDetailContainer = () => {
 
     }
 
+    const id = useParams().id
+
     const [details, setDetail] = useState({});
     useEffect(() => {
         consultarPromesa(true)
-            .then((res) => setDetail(res.find((item) => item.id === 1)))
+            .then((res) => setDetail(res.find((item) => item.id === id)))
             .catch(error => {
                 console.error(error)
             })
-    }, []);
+    }, [id]);
     console.log(details);
 
     return (
