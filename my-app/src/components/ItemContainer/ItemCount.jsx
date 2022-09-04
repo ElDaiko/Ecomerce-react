@@ -1,7 +1,7 @@
 import { React } from 'react';
 import UseCont from '../../hooks/useCont';
 import { FaRedo, FaCheckCircle } from 'react-icons/fa';
-import { Link } from "react-router-dom"
+
 
 const ItemCount = ({ stock, onAdd, onReset }) => {
 
@@ -20,9 +20,6 @@ const ItemCount = ({ stock, onAdd, onReset }) => {
                     <button className='btn margin' onClick={add}>+</button>
                 </div>
                 <button className="btn" onClick={() => onAdd(cont)}><FaCheckCircle /></button>
-                <Link className='btn' to = '/itemDetail'>
-                    Details
-                </Link>
             </div>
         </div>
     );

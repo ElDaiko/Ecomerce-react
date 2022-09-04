@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-const UseCont = (stock, onAdd) => {
+const UseCont = (stock) => {
 
     const [cont, setCont] = useState(1)
 

@@ -1,5 +1,5 @@
 export const productoStock = [
-    { id: 1, nombre: "Hoodie Bendu", material: "Algodon", precio: 180.000, stock: 10 },
+    { id: 1, nombre: "Hoodie Bendu", material: "Algodon", precio: 180.000, stock: 10},
     { id: 2, nombre: "Short Bendu", material: "Algodon", precio: 180.000, stock: 3 },
     { id: 3, nombre: "Shirt Bendu", material: "Algodon", precio: 180.000, stock: 5 },
     { id: 4, nombre: "Pant Bendu", material: "Algodon", precio: 180.000, stock: 7 },
