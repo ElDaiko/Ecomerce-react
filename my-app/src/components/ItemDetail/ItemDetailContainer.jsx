@@ -21,7 +21,7 @@ const ItemDetailContainer = () => {
     const [details, setDetail] = useState({});
     useEffect(() => {
         consultarPromesa(true)
-            .then((res) => setDetail(res.find((item) => item.id === 2)))
+            .then((res) => setDetail(res.find((item) => item.id === 1)))
             .catch(error => {
                 console.error(error)
             })

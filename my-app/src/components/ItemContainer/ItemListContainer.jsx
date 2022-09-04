@@ -22,6 +22,7 @@ const ItemListContainer = () => {
     }
 
     
+    
     function consultarPromesa(confirmacion) {
 
         return new Promise((res, rej) => {
