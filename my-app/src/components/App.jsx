@@ -1,10 +1,11 @@
-import {React} from 'react';
+import { React } from 'react';
 import Shop from './HomePage/Bendushop';
 import Navbar from './Navbar/Navbar';
-import ItemListContainer from './ItemFiles/ItemListContainer';
+import ItemListContainer from './ItemContainer/ItemListContainer';
 import Footers from './Footer/Bendufooter';
 import Tees from './HomePage/Bendutees';
 import Home from './HomePage/Benduhome';
+import ItemDetailContainer from './ItemDetail/ItemDetailContainer';
 
 import {
   BrowserRouter as Router,
@@ -35,10 +36,9 @@ const Navhome = () => {
 }
 
 
-
 function App() {
   return (
-    <Router>  
+    <Router>
       <Routes>
         <Route path="tees"
           element={
@@ -52,10 +52,13 @@ function App() {
           element={
             <ItemListContainer/>
           } />
+         <Route path="/itemDetail"
+          element={
+            <ItemDetailContainer/>
+          } />
       </Routes>
     </Router>
   );
 }
 
 export default App;
- 

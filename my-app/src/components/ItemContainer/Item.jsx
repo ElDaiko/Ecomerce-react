@@ -1,5 +1,6 @@
  import React from 'react';
 
+
 const Item = ({ producto }) => {
     return (
         <div className="card text-white bg-primary mb-3 btncont2" key={producto.id}>
@@ -7,7 +8,7 @@ const Item = ({ producto }) => {
             <div className="card-body">
                 <p className="card-text">Precio: ${producto.precio}</p>
                 <p className="card-text">Material: {producto.material}</p>
-                <p className="card-text">Stock: {producto.stock}</p>
+                <p className="card-text">Stock: {producto.stock}</p> 
             </div>
         </div>
     );

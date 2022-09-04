@@ -2,6 +2,7 @@ import React from 'react';
 import ItemCount from './ItemCount';
 import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
+import {productoStock} from '../../mocks/MockData'
 
 const ItemListContainer = () => {
 
@@ -20,10 +21,7 @@ const ItemListContainer = () => {
         setStock(10)
     }
 
-
-    const productoStock = [
-        { id: 1, nombre: "Hoodie Bendu", material: "Algodon", precio: 180.000, stock: 10 },
-    ]
+    
     function consultarPromesa(confirmacion) {
 
         return new Promise((res, rej) => {
@@ -48,7 +46,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            <ItemCount stock={stock} onAdd={onAdd} onReset={onReset} />
+            <ItemCount stock={stock} onAdd={onAdd} onReset={onReset} productos={productos}/>
             <ItemList productos={productos} />
         </div>
     );
