@@ -38,7 +38,7 @@ const ItemCount = ({producto}) => {
                     <button className='btn margin' onClick={add}>+</button>
                 </div>
                 <button className="btn" onClick={() => onAdd(cont)}><FaCheckCircle /></button>
-                <Link className='btn' to={`ItemDetail/${producto.id}`}>
+                <Link className='btn' to={`item/${producto.id}`}>
                     Details
                 </Link>
             </div>

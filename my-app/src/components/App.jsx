@@ -49,11 +49,11 @@ function App() {
           element={
             <Navhome />
           } />
-        <Route path="/itemList/:categoria"
+        <Route path="/category/:categoria"
           element={
             <ItemListContainer/>
           } />
-         <Route path="/itemList/:categoria/ItemDetail/:id"
+         <Route path="/category/:categoria/item/:id"
           element={
             <ItemDetailContainer/>
           } />

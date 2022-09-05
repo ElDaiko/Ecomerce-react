@@ -10,15 +10,15 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarColor02">
               <ul className="navbar-nav me-auto">
                 <li className="nav-item">
-                  <a className="nav-link active" href="/">Home</a>
+                  <a className="nav-link active" href="/">Bendu</a>
                 </li>
-                <Link to = "/itemList/Tees">
+                <Link to = "/category/Tees">
                     <li className="nav-link">Tees</li>
                 </Link>
-                <Link to = "/itemList/Short">
+                <Link to = "/category/Short">
                     <li className="nav-link">Shorts</li>
                 </Link>
-                <Link to = "/itemList/Hoodie">
+                <Link to = "/category/Hoodie">
                     <li className="nav-link">Hoodies</li>
                 </Link>
                 <li>

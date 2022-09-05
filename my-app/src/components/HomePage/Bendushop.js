@@ -9,13 +9,13 @@ const Shop = () =>{
                 <hr></hr>
             </div>
             <div className="boxes33">
-                <Link to = "/itemList/Tees">
+                <Link to = "/category/Tees">
                     <button className="tees">Tees</button>
                 </Link>
-                <Link to = "/itemList/Short">
+                <Link to = "/category/Short">
                     <button className="shorts">Shorts</button>
                 </Link>
-                <Link to = "/itemList/Hoodie">
+                <Link to = "/category/Hoodie">
                     <button className="hodies">Hoddies</button>
                 </Link>
             </div> 
