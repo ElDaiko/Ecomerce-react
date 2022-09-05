@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import ItemList from './ItemList';
 import {productoStock} from '../../mocks/MockData'
 import Navbar from '../Navbar/Navbar';
+import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
     
@@ -18,15 +19,19 @@ const ItemListContainer = () => {
         })
 
     }
+    const categoria = useParams().categoria
 
+    console.log(categoria);
+    
     const [productos, setProductos] = useState([]);
     useEffect(() => {
         consultarPromesa(true)
-            .then((res) => setProductos(res))
+            .then((res) => setProductos(res.filter((item) => item.categoria === categoria)))
             .catch(error => {
                 console.error(error)
             })
-    }, []);
+    },[categoria]);
+    console.log(productos);
 
     return (
         <div>

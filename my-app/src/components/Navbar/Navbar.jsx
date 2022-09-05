@@ -12,13 +12,13 @@ function Navbar() {
                 <li className="nav-item">
                   <a className="nav-link active" href="/">Home</a>
                 </li>
-                <Link to = "/itemList">
+                <Link to = "/itemList/Tees">
                     <li className="nav-link">Tees</li>
                 </Link>
-                <Link to = "/itemList">
+                <Link to = "/itemList/Short">
                     <li className="nav-link">Shorts</li>
                 </Link>
-                <Link to = "/itemList">
+                <Link to = "/itemList/Hoodie">
                     <li className="nav-link">Hoodies</li>
                 </Link>
                 <li>
