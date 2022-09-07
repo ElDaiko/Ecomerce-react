@@ -22,7 +22,6 @@ const Navhome = () => {
     <div className="body">
       <div className="body1">
         <div className="App">
-      
           <Navbar/>
           <Home />
         </div>

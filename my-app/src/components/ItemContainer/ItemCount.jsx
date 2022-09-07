@@ -20,16 +20,14 @@ const ItemCount = ({producto}) => {
 
     function onReset() {
         console.log("se han resetado las adiciones")
-        setStock(10)
+        setStock(producto.stock)
     }
 
     const { add, sub, cont } = UseCont(stock)
 
     return (
         <div className='cardcontainer'>
-
             <div className="card text-white bg-primary mb-3 btncont">
-                <button className='btn' onClick={() => onReset()}><FaRedo /></button>
                 <div className="hoodie"></div>
                 <div>
                     <p>Stock: {stock} </p>
@@ -38,6 +36,7 @@ const ItemCount = ({producto}) => {
                     <button className='btn margin' onClick={add}>+</button>
                 </div>
                 <button className="btn" onClick={() => onAdd(cont)}><FaCheckCircle /></button>
+                <button className='btn' onClick={() => onReset()}><FaRedo /></button>
                 <Link className='btn' to={`item/${producto.id}`}>
                     Details
                 </Link>
