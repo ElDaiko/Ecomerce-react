@@ -10,18 +10,19 @@ const ItemListContainer = () => {
     function consultarPromesa(confirmacion) {
 
         return new Promise((res, rej) => {
-            if (confirmacion) {
-                res(productoStock)
-            }
-            else {
-                rej("Acceso denegado")
-            }
+            setTimeout(() => {
+                if (confirmacion) {
+                    res(productoStock)
+                }
+                else {
+                    rej("Acceso denegado")
+                }
+            }, 1500);
         })
 
     }
     const categoria = useParams().categoria
 
-    console.log(categoria);
     
     const [productos, setProductos] = useState([]);
     useEffect(() => {
@@ -31,7 +32,6 @@ const ItemListContainer = () => {
                 console.error(error)
             })
     },[categoria]);
-    console.log(productos);
 
     return (
         <div>

@@ -3,7 +3,6 @@ import Shop from './HomePage/Bendushop';
 import Navbar from './Navbar/Navbar';
 import ItemListContainer from './ItemContainer/ItemListContainer';
 import Footers from './Footer/Bendufooter';
-import Tees from './HomePage/Bendutees';
 import Home from './HomePage/Benduhome';
 import ItemDetailContainer from './ItemDetail/ItemDetailContainer';
 
@@ -41,10 +40,6 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="tees"
-          element={
-            <Tees />
-          } />
         <Route path="/"
           element={
             <Navhome />

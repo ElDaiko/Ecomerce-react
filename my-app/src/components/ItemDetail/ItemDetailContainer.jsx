@@ -3,18 +3,22 @@ import {productoStock} from '../../mocks/MockData'
 import { useState, useEffect } from 'react';
 import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const ItemDetailContainer = () => {
 
     function consultarPromesa(confirmacion) {
 
         return new Promise((res, rej) => {
-            if (confirmacion) {
-                res(productoStock)
-            }
-            else {
-                rej("Acceso denegado")
-            }
+            setTimeout(() => {
+                if (confirmacion) {
+                    res(productoStock)
+                }
+                else {
+                    rej("Acceso denegado")
+                }
+            }, 2000);
+            
         })
 
     }
@@ -29,10 +33,10 @@ const ItemDetailContainer = () => {
                 console.error(error)
             })
     }, [id]);
-    console.log(details);
 
     return (
         <div>
+            <Navbar/>
             <ItemDetail details={details}/>
         </div>
     );
