@@ -13,10 +13,6 @@ import {
 } from "react-router-dom";
 
 
-
-//conectar mi html con el react
-
-
 const Navhome = () => {
   return (
     <div className="body">

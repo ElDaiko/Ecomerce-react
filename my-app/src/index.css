@@ -34,17 +34,9 @@
   transform: translateY(4px);
 }
 
-.hoodie{
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  background-image: url(img/hoodiejpn.png);
-  padding: 118px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 80%;
-  padding-bottom: 100%;
-  padding-top: 3%;
+.dinamicimg{
+  vertical-align: middle;
+  width: 100%;
 }
 
 .cardcontainer{
@@ -284,4 +276,11 @@ footer p{
 h2 {
   color: rgb(0, 0, 0);
   font-size: 42px;
+}
+
+
+.rowcard{
+  display: inline-block;
+  width: 15%;
+  margin-right: 10%;
 }

@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
                 else {
                     rej("Acceso denegado")
                 }
-            }, 2000);
+            }, 1500);
             
         })
 
@@ -33,6 +33,8 @@ const ItemDetailContainer = () => {
                 console.error(error)
             })
     }, [id]);
+
+    if (!details.id) return null
 
     return (
         <div>
