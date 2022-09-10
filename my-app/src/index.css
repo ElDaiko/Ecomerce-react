@@ -17,12 +17,10 @@
 }
 
 .btncont{
-  max-width: 15%;
   text-align: center;
 }
 
 .btncont2{
-  max-width: 10%; 
   margin: 5px;
   text-align: center;
 }
@@ -284,3 +282,41 @@ h2 {
   width: 15%;
   margin-right: 10%;
 }
+
+.shopcard{
+  padding-bottom: 2%;
+  display: inline-block;
+  width: 23%;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  padding-top: 4%;
+  margin-right: 2%;
+  background-color: #66666696;
+  margin-top: 3%;
+  cursor: pointer;
+  background-size: cover;
+  box-shadow: 0 9px #999;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Nikumaru;
+  border-radius: 15px;
+  border: none;
+  }
+
+  .shopcard:active{
+    background-color: #b0dfea;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .fontShop{
+    color: black;
+  }
+
+  .shopcard:hover{
+    background-color: #dfdada;
+    box-shadow: 0 5px #dfdada;
+  }
+

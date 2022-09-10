@@ -10,15 +10,12 @@ const ItemDetailContainer = () => {
     function consultarPromesa(confirmacion) {
 
         return new Promise((res, rej) => {
-            setTimeout(() => {
                 if (confirmacion) {
                     res(productoStock)
                 }
                 else {
                     rej("Acceso denegado")
-                }
-            }, 1500);
-            
+                }      
         })
 
     }
