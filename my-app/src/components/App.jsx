@@ -5,12 +5,14 @@ import ItemListContainer from './ItemContainer/ItemListContainer';
 import Footers from './Footer/Bendufooter';
 import Home from './HomePage/Benduhome';
 import ItemDetailContainer from './ItemDetail/ItemDetailContainer';
+import Cart from './Cart/Cart';
 
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
+
 
 
 const Navhome = () => {
@@ -47,9 +49,10 @@ function App() {
           element={
             <ItemDetailContainer/>
           } />
-          <Route path='/cart'>
-
-          </Route>
+         <Route path="/cart"
+          element={
+            <Cart/>
+          } /> 
       </Routes>
     </Router>
   );
