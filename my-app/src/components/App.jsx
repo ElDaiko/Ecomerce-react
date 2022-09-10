@@ -47,6 +47,9 @@ function App() {
           element={
             <ItemDetailContainer/>
           } />
+          <Route path='/cart'>
+
+          </Route>
       </Routes>
     </Router>
   );

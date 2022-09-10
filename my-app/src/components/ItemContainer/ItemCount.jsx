@@ -2,8 +2,9 @@ import { React } from 'react';
 import UseCont from '../../hooks/useCont';
 import { FaRedo, FaCheckCircle } from 'react-icons/fa';
 
-const ItemCount = ({ producto, setStock, stock }) => {
+const ItemCount = ({ producto, setStock, stock, onSave }) => {
 
+    const { add, sub, cont } = UseCont(stock)
     
     function onAdd(cont) {
         if (stock > 0 && cont <= stock) {
@@ -18,7 +19,7 @@ const ItemCount = ({ producto, setStock, stock }) => {
         setStock(producto.stock)
     }
 
-    const { add, sub, cont } = UseCont(stock)
+    
 
     return (
         <div>
@@ -27,7 +28,7 @@ const ItemCount = ({ producto, setStock, stock }) => {
                 {cont}
                 <button className='btn margin' onClick={add}>+</button>
             </div>
-            <button className="btn" onClick={() => onAdd(cont)}><FaCheckCircle /></button>
+            <button className="btn" onClick={() => {onAdd(cont);onSave()}}><FaCheckCircle /></button>
             <button className='btn' onClick={() => onReset()}><FaRedo /></button>
         </div>
     );

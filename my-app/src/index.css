@@ -2,6 +2,8 @@
     font-size: 200%;
     list-style: none;
     padding-right: 12px;
+    color: black;
+    border-radius: 15px;
 }
 
 .text{
@@ -201,6 +203,11 @@ footer p{
   transform: translateY(4px);
 }
 
+.tees:hover {
+  background-color: #dfdada;
+  box-shadow: 0 5px #dfdada;
+}
+
 .hodies{
   border: none;
   border-radius: 15px;
@@ -223,6 +230,11 @@ footer p{
   transform: translateY(4px);
 }
 
+.hodies:hover {
+  background-color: #dfdada;
+  box-shadow: 0 5px #dfdada;
+}
+
 .shorts{
   border: none;
   border-radius: 15px;
@@ -243,6 +255,11 @@ footer p{
   background-color: #b0dfea;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.shorts:hover {
+  background-color: #dfdada;
+  box-shadow: 0 5px #dfdada;
 }
 
 .jpan2 {

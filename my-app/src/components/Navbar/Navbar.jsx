@@ -25,7 +25,9 @@ function Navbar() {
                   <a className="nav-link" href="mailto:mirole16@gmail.com?Subject=Yo your clothes are dope but...">Contact</a>
                 </li>
               </ul>
-              <Cart/>
+              <Link to = "/cart">
+                <Cart/>
+              </Link>
             </div>
           </div>
         </nav>
