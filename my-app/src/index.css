@@ -32,7 +32,14 @@
   background-color: #eab0d2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  color: white;
 }
+
+.btn:hover{
+  color: white;
+}
+
+
 
 .dinamicimg{
   vertical-align: middle;
@@ -47,6 +54,7 @@
 .cardcontainer2{
   padding-top: 1%;
   padding-left: 2.5%;
+  margin-bottom: 10%;
 }
 
 .margin{
@@ -182,6 +190,8 @@ footer p{
 }
 
 .tees{
+  color: black;
+  background-color: #66666696;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -209,6 +219,8 @@ footer p{
 }
 
 .hodies{
+  color: black;
+  background-color: #66666696;
   border: none;
   border-radius: 15px;
   cursor: pointer;
@@ -236,6 +248,8 @@ footer p{
 }
 
 .shorts{
+  color: black;
+  background-color: #66666696;
   border: none;
   border-radius: 15px;
   cursor: pointer;

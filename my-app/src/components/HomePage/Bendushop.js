@@ -8,15 +8,15 @@ const Shop = () =>{
                 <h2>Shop</h2>
                 <hr></hr>
             </div>
-            <div className="boxes33">
+            <div className="boxes33 ">
                 <Link to = "/category/Tees">
-                    <button className="tees">Tees</button>
+                    <button className="tees btn">Tees</button>
                 </Link>
                 <Link to = "/category/Short">
-                    <button className="shorts">Shorts</button>
+                    <button className="shorts btn">Shorts</button>
                 </Link>
                 <Link to = "/category/Hoodie">
-                    <button className="hodies">Hoddies</button>
+                    <button className="hodies btn">Hoddies</button>
                 </Link>
             </div> 
         </div>

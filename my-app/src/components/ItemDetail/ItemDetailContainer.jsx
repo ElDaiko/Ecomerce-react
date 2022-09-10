@@ -5,6 +5,7 @@ import ItemDetail from './ItemDetail';
 import { useParams } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 
+
 const ItemDetailContainer = () => {
 
     function consultarPromesa(confirmacion) {

@@ -10,6 +10,7 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
         if (stock > 0 && cont <= stock) {
             console.log("se han confirmado", cont, "productos")
             setStock(stock - cont)
+            
         }
 
     }
