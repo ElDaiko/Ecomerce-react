@@ -29,7 +29,7 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
                 {cont}
                 <button className='btn margin' onClick={add}>+</button>
             </div>
-            <button className="btn" onClick={() => {onAdd(cont);onSave()}}><FaCheckCircle /></button>
+            <button className="btn" onClick={() => {onAdd(cont);onSave(cont)}}><FaCheckCircle /></button>
             <button className='btn' onClick={() => onReset()}><FaRedo /></button>
         </div>
     );
