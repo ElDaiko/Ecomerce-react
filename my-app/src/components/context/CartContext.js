@@ -37,8 +37,25 @@ export const CartProvider = ({children}) =>{
         return cart.some((prod) => prod.id === id)  /* some devuelve bool */
     }
 
+    const totalCart = () =>{
+        let cont = 0;
+        cart.forEach((item) => {
+            cont += (item.quantity * item.precio)
+        })
+        return cont;
+
+    }
+
+    const totalQuantity = () =>{
+        let quantity = 0;
+        cart.forEach((element) =>{
+            quantity += (element.quantity)
+        })
+        return quantity;
+    }
+
     return(
-        <CartContext.Provider value={{cart, clear, isIncart, removeItem, addItem}}>
+        <CartContext.Provider value={{cart, clear, isIncart, removeItem, addItem, totalCart, totalQuantity}}>
             {children} {/* se usa la prop children para enviar los datos a todo componente que lo necesite y envuelva */}
         </CartContext.Provider>
     )

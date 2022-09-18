@@ -358,3 +358,7 @@ h2 {
 .itemCart{
   width: 14%;
 }
+
+.btnDelete{
+  background-color: antiquewhite;
+}
