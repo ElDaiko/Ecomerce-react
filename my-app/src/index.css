@@ -39,8 +39,6 @@
   color: white;
 }
 
-
-
 .dinamicimg {
   vertical-align: middle;
   width: 100%;
@@ -362,3 +360,43 @@ h2 {
 .btnDelete{
   background-color: antiquewhite;
 }
+
+.detailContainer{
+  display: flex;
+  margin-top: 5%;
+  background-color: #66666645;
+  width: 59%;
+}
+
+.itemDetail{
+  width: 10%;
+}
+
+.btn2{
+  color: black;
+  border: none;
+  background: none;
+}
+
+.addItem{
+  border: 1px solid #1c1b1b;
+}
+
+.inlineMargin{
+  margin: 20%;
+}
+
+.fontShop2 {
+  color: black;
+  text-align: center;
+  margin-top: 7%;
+}
+
+.fontShop3 {
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+
+

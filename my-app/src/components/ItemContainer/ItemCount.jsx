@@ -1,12 +1,12 @@
 import { React } from 'react';
 import UseCont from '../../hooks/useCont';
-import { FaRedo, FaCheckCircle } from 'react-icons/fa';
-import { useCart } from '../context/CartContext';
+/* import { FaRedo, FaCheckCircle } from 'react-icons/fa';
+import { useCart } from '../context/CartContext'; */
 
 const ItemCount = ({ producto, setStock, stock, onSave }) => {
 
     const { add, sub, cont } = UseCont(stock)
-    const {removeItem} = useCart()
+    /* const {removeItem} = useCart() */
     
     function onAdd(cont) {
         if (stock > 0 && cont <= stock) {
@@ -25,17 +25,18 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
     
 
     return (
-        <div>
-            <div>
-                <button className='btn margin' onClick={sub}>-</button>
-                {cont}
-                <button className='btn margin' onClick={add}>+</button>
+        <div className='fontShop2'>
+            <div className='addItem'>
+                <button className='btn2 margin' onClick={sub}>-</button>
+                <i className='inlineMargin'>{cont}</i>
+                <button className='btn2 margin' onClick={add}>+</button>
             </div>
-            <button className="btn" onClick={() => {onAdd(cont);onSave(cont)}}><FaCheckCircle /></button>
-            <button className='btn' onClick={() => removeItem(producto.id)}><FaRedo /></button>
+            <button className="btn2" onClick={() => {onAdd(cont);onSave(cont)}}>Add to cart</button>
+            {/* <button className='btn' onClick={() => removeItem(producto.id)}><FaRedo /></button> */}
         </div>
     );
 
 }
+
 
 export default ItemCount;
