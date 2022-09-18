@@ -1,12 +1,12 @@
 .carticon {
-    font-size: 200%;
-    list-style: none;
-    padding-right: 12px;
-    color: black;
-    border-radius: 15px;
+  font-size: 200%;
+  list-style: none;
+  padding-right: 12px;
+  color: black;
+  border-radius: 15px;
 }
 
-.text{
+.text {
   font-family: Nikumaru;
   color: antiquewhite;
   padding-left: 39%;
@@ -14,67 +14,67 @@
   margin: 0%;
 }
 
-.flex-row{
+.flex-row {
   display: flex;
 }
 
-.btncont{
+.btncont {
   text-align: center;
 }
 
-.btncont2{
+.btncont2 {
   margin: 5px;
   text-align: center;
 }
 
 
-.btn:active{
+.btn:active {
   background-color: #eab0d2;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
   color: white;
 }
 
-.btn:hover{
+.btn:hover {
   color: white;
 }
 
 
 
-.dinamicimg{
+.dinamicimg {
   vertical-align: middle;
   width: 100%;
 }
 
-.cardcontainer{
+.cardcontainer {
   padding-top: 1%;
   padding-left: 1%;
 }
 
-.cardcontainer2{
+.cardcontainer2 {
   padding-top: 1%;
   padding-left: 2.5%;
   margin-bottom: 10%;
 }
 
-.margin{
+.margin {
   margin-left: 5%;
   margin-right: 5%;
   font-weight: bold;
 }
 
-p{
+p {
   font-weight: bold;
   font-family: initial;
 }
 
-.container2{
+.container2 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -88,13 +88,13 @@ body{
   src: url(font/Corporate-Logo-Rounded.otf);
 }
 
-nav{
+nav {
   text-align: left;
   padding-top: 14px;
   padding-bottom: 14px;
 }
 
-nav a{
+nav a {
   text-decoration: none;
   color: antiquewhite;
   font-size: 18px;
@@ -102,7 +102,7 @@ nav a{
   padding-right: 10px;
 }
 
-.text1{
+.text1 {
   color: antiquewhite;
   padding-left: 44%;
   font-size: 50px;
@@ -110,14 +110,14 @@ nav a{
   padding-bottom: 25%;
 }
 
-.container{
+.container {
   margin-top: 20%;
   margin-left: auto;
   margin-right: auto;
   width: 1024px;
 }
 
-.body1{
+.body1 {
   background-color: #2F3035;
   background-image: url(img/Highest-Mountain-In-The-World-Mount-Fuji.jpg);
   background-repeat: no-repeat;
@@ -125,31 +125,31 @@ nav a{
   background-size: cover;
 }
 
-.container2{
+.container2 {
   width: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-body{
+body {
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.shoptil{
+.shoptil {
   margin: 80px auto 0 auto;
   text-align: center;
 }
 
-h2{
+h2 {
   color: rgb(0, 0, 0);
   font-size: 42px;
   font-weight: bold;
   font-family: initial;
 }
 
-hr{
+hr {
   width: 200px;
   color: black;
   text-align: center;
@@ -157,7 +157,7 @@ hr{
   height: 1px;
 }
 
-.boxes33{
+.boxes33 {
   padding-bottom: 170px;
   text-align: center;
   display: grid;
@@ -168,7 +168,7 @@ hr{
   padding-top: 4%;
 }
 
-.boxes33 > div{
+.boxes33>div {
   width: 80%;
   height: 200%;
   border-radius: 25px;
@@ -178,18 +178,18 @@ hr{
   margin: 80px auto 40px auto;
 }
 
-.boxes33 > div:hover{
+.boxes33>div:hover {
   transition: 0.25 ease-in;
   background-color: #ffffff
 }
 
-footer p{
+footer p {
   font-size: 10px;
   text-align: center;
   color: rgb(24, 23, 23);
 }
 
-.tees{
+.tees {
   color: black;
   background-color: #66666696;
   border: none;
@@ -204,7 +204,7 @@ footer p{
   background-position: center;
   background-size: 100%;
   padding-bottom: 100%;
-    padding-top: 3%;
+  padding-top: 3%;
 }
 
 .tees:active {
@@ -218,7 +218,7 @@ footer p{
   box-shadow: 0 5px #dfdada;
 }
 
-.hodies{
+.hodies {
   color: black;
   background-color: #66666696;
   border: none;
@@ -247,7 +247,7 @@ footer p{
   box-shadow: 0 5px #dfdada;
 }
 
-.shorts{
+.shorts {
   color: black;
   background-color: #66666696;
   border: none;
@@ -284,7 +284,7 @@ footer p{
   color: black;
 }
 
-.boxes33 a{
+.boxes33 a {
   text-decoration: none;
   color: black;
   padding: 0;
@@ -295,7 +295,7 @@ footer p{
 
 .bg-dark {
   --bs-bg-opacity: ;
-  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .navbar {
@@ -308,13 +308,13 @@ h2 {
 }
 
 
-.rowcard{
+.rowcard {
   display: inline-block;
   width: 15%;
   margin-right: 10%;
 }
 
-.shopcard{
+.shopcard {
   padding-bottom: 2%;
   display: inline-block;
   width: 23%;
@@ -334,23 +334,27 @@ h2 {
   font-family: Nikumaru;
   border-radius: 15px;
   border: none;
-  }
+}
 
-  .shopcard:active{
-    background-color: #b0dfea;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.shopcard:active {
+  background-color: #b0dfea;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
-  .fontShop{
-    color: black;
-  }
+.fontShop {
+  color: black;
+}
 
-  .shopcard:hover{
-    background-color: #dfdada;
-    box-shadow: 0 5px #dfdada;
-  }
+.shopcard:hover {
+  background-color: #dfdada;
+  box-shadow: 0 5px #dfdada;
+}
 
-.cartstuff{
+.cartstuff {
   text-align: center;
+}
+
+.itemCart{
+  width: 14%;
 }

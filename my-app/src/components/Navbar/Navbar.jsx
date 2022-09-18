@@ -9,9 +9,9 @@ function Navbar() {
 {/*             <a className="navbar-brand" href="/">Bendu</a> */}
             <div className="collapse navbar-collapse" id="navbarColor02">
               <ul className="navbar-nav me-auto">
-                <li className="nav-item">
-                  <a className="nav-link active" href="/">Bendu</a>
-                </li>
+                <Link  to = "/">
+                  <li className="nav-item nav-link active">Bendu</li>
+                </Link>
                 <Link to = "/category/Tees">
                     <li className="nav-link">Tees</li>
                 </Link>
