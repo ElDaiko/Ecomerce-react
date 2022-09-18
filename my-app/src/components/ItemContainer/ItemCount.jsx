@@ -1,10 +1,12 @@
 import { React } from 'react';
 import UseCont from '../../hooks/useCont';
 import { FaRedo, FaCheckCircle } from 'react-icons/fa';
+import { useCart } from '../context/CartContext';
 
 const ItemCount = ({ producto, setStock, stock, onSave }) => {
 
     const { add, sub, cont } = UseCont(stock)
+    const {removeItem} = useCart()
     
     function onAdd(cont) {
         if (stock > 0 && cont <= stock) {
@@ -15,10 +17,10 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
 
     }
 
-    function onReset() {
+    /* function onReset() {
         console.log("se han resetado las adiciones")
         setStock(producto.stock)
-    }
+    } */
 
     
 
@@ -30,7 +32,7 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
                 <button className='btn margin' onClick={add}>+</button>
             </div>
             <button className="btn" onClick={() => {onAdd(cont);onSave(cont)}}><FaCheckCircle /></button>
-            <button className='btn' onClick={() => onReset()}><FaRedo /></button>
+            <button className='btn' onClick={() => removeItem(producto.id)}><FaRedo /></button>
         </div>
     );
 
