@@ -1,4 +1,4 @@
-export const productoStock = [
+/* export const productoStock = [
     { id: "1", categoria: "Hoodie", nombre: "Hoodie white", material: "Oversize hoodie with incredible details made with high quality materials", precio: 145000, stock: 10, img: 'hoodiejpn.png'},
     { id: "2", categoria: "Hoodie", nombre: "Hoodie blue", material: "Oversize hoodie with incredible details made with high quality materials", precio: 145000, stock: 3, img: 'hoodiejpn.png' },
     { id: "3", categoria: "Hoodie", nombre: "Hoodie purple", material: "Oversize hoodie with incredible details made with high quality materials", precio: 145000, stock: 5, img: 'hoodiejpn.png' },
@@ -14,4 +14,4 @@ export const productoStock = [
     { id: "13", categoria: "Tees", nombre: "Tees purple", material: "Oversize tees with incredible details made with high quality materials", precio: 85000, stock: 32, img: 'teejpn.png' },
     { id: "14", categoria: "Tees", nombre: "Tees black", material: "Oversize tees with incredible details made with high quality materials", precio: 85000, stock: 2, img: 'teejpn.png' },
     { id: "15", categoria: "Tees", nombre: "Tees brown", material: "Oversize tees with incredible details made with high quality materials", precio: 85000, stock: 6, img: 'teejpn.png' },
-]
+] */

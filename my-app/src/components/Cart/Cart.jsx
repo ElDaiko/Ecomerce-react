@@ -17,7 +17,7 @@ const Cart = () => {
                         <div key={element.id} className="cartstuff"> {/* paso el key al inicio del render dadoa  que todo item debe de tener el identificador */}
                             <span>{element.nombre} Precio: {element.precio} Cantidad: {element.quantity}</span>
                             <div>
-                                <img className='itemCart' src={`/assets/images/${element.img}`} alt='img' />
+                                <img className='itemCart' src={element.img} alt='img' />
                             </div>
                             <button className='btn' onClick={() => removeItem(element.id)}>Eliminar el producto</button>
                         </div>

@@ -25,7 +25,7 @@ const ItemDetail = ({ details }) => {
     }
     return (
         <div className='detailContainer'>
-            <img src={`/assets/images/${details.img}`} alt='img'></img>
+            <img src={details.img} alt='img'></img>
             <div className="fontShop2 btn2" key={details.id}>
                 <p>{details.nombre}</p>
                 <div>
