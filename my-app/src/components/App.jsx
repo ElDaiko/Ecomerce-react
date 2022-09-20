@@ -13,7 +13,7 @@ import {
   Route,
 } from "react-router-dom";
 
-
+//Before fire base
 
 const Navhome = () => {
   return (
