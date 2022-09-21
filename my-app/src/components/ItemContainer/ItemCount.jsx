@@ -9,10 +9,13 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
     /* const {removeItem} = useCart() */
     
     function onAdd(cont) {
-        if (stock > 0 && cont <= stock) {
+        if (stock >= 1 && cont <= stock) {
             console.log("se han confirmado", cont, "productos")
             setStock(stock - cont)
             
+        }
+        else{
+            console.log("Valor menor a 1");
         }
 
     }
