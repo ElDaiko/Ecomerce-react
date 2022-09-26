@@ -58,7 +58,7 @@ export const Checkout = () => {
                     </form>
                 </div> :
                 <div>
-                    <h3>Your order id is: {orderId} </h3>
+                    <h2>Your order id is: {orderId} </h2>
                     <Link to='/'>
                         <button>Home</button>
                     </Link>
