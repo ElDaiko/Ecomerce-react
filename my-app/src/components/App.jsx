@@ -12,6 +12,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import Checkout from './Checkout/checkout';
 
 //Before fire base
 
@@ -53,6 +54,10 @@ function App() {
           element={
             <Cart/>
           } /> 
+        <Route path = "/checkout"
+        element={
+          <Checkout/>
+        }/>
       </Routes>
     </Router>
   );
