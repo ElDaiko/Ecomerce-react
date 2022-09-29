@@ -39,7 +39,9 @@ const ItemDetail = ({ details }) => {
                     <Link to="/cart">
                         <button className=''>Go to Cart</button>
                     </Link>
-                    <button onClick={() => setSave(false)}>Continue buying</button>
+                    <Link to="/">
+                        <button onClick={() => setSave(false)}>Continue buying</button>
+                    </Link>
             </div>}
             </div>
             

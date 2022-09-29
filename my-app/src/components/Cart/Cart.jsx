@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Cart = () => {
     /* const{cart} = useContext(CartContext) */
-    const { cart, removeItem, totalCart } = useCart()
+    const { cart, removeItem, totalCart, clear } = useCart()
     console.log('carrito', cart);
 
     return (
@@ -15,23 +15,24 @@ const Cart = () => {
                 <div className='card'>
                     {cart.map((element) =>
                         <div key={element.id} className="cartstuff"> {/* paso el key al inicio del render dadoa  que todo item debe de tener el identificador */}
-                            <span>{element.nombre} Precio: {element.precio} Cantidad: {element.quantity}</span>
+                            <span>{element.nombre} Precio: {element.precio} Quantity {element.quantity}</span>
                             <div>
                                 <img className='itemCart' src={element.img} alt='img' />
                             </div>
-                            <button className='btn' onClick={() => removeItem(element.id)}>Eliminar el producto</button>
+                            <button className='btn' onClick={() => removeItem(element.id)}>Delete product</button>
                         </div>
                     )}
                     <div>
-                        <h4>Precio total: {totalCart()} </h4>
+                        <h4>Total: {totalCart()} </h4>
                         <Link to = "/checkout" >
-                            <button>Comprar</button>
-                        </Link>      
+                            <button>Buy</button>
+                        </Link>
+                        <button onClick={() => clear()}>Clear Cart</button>      
                     </div>
                 </div>
                 : <Link to="/">
                     <button className='card btn'>
-                        Comprar productos!
+                        Explore our products!
                     </button>
                 </Link>
             }</>
