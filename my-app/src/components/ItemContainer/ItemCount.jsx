@@ -10,22 +10,14 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
     
     function onAdd(cont) {
         if (stock >= 1 && cont <= stock) {
-            console.log("se han confirmado", cont, "productos")
             setStock(stock - cont)
             
         }
         else{
-            console.log("Valor menor a 1");
+            console.error();
         }
 
     }
-
-    /* function onReset() {
-        console.log("se han resetado las adiciones")
-        setStock(producto.stock)
-    } */
-
-    
 
     return (
         <div className='fontShop2'>
@@ -35,7 +27,6 @@ const ItemCount = ({ producto, setStock, stock, onSave }) => {
                 <button className='btn2 margin' onClick={add}>+</button>
             </div>
             <button className="btn2" onClick={() => {onAdd(cont);onSave(cont)}}>Add to cart</button>
-            {/* <button className='btn' onClick={() => removeItem(producto.id)}><FaRedo /></button> */}
         </div>
     );
 

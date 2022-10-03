@@ -7,7 +7,6 @@ const UseCont = (stock) => {
     function add() {
         if (cont < stock && cont > 0) {
             setCont(cont + 1)
-            console.log(stock)
         }
 
     }

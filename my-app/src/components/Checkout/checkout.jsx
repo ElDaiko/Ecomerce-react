@@ -33,15 +33,6 @@ export const Checkout = () => {
             console.log(error)
         }
     }
-/* 
-    const actStock = async (items) => {
-        try {
-            const productos = categoria ? query(collection(db, "Bendu"), where("categoria", "==", categoria)) :collection(db, "Bendu")
-            updateDoc(items)
-        } catch (error) {
-            console.log(error)
-        }
-    } */
 
     const handleSubmit = (form) => {
         form.preventDefault()
@@ -49,9 +40,7 @@ export const Checkout = () => {
         const dia = new Date()
         const total = totalCart()
         const data = { buyer, items, dia, total }
-        console.log(data);
         generateOrder(data)
-        /* actStock(items) */
     }
 
     return (
