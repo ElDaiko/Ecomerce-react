@@ -20,7 +20,7 @@ export const CartProvider = ({children}) =>{
             setCart(actualized)
         }
         else{
-            setCart([...cart, item]) /* spread operator */
+            setCart([...cart, item])
         } 
         
     }
@@ -30,11 +30,11 @@ export const CartProvider = ({children}) =>{
     }
 
     const removeItem= (id) =>{
-        setCart(cart.filter((prod)=>prod.id !== id)) /* filter devuelve un array */
+        setCart(cart.filter((prod)=>prod.id !== id))
     }
 
     const isIncart= (id) =>{
-        return cart.some((prod) => prod.id === id)  /* some devuelve bool */
+        return cart.some((prod) => prod.id === id)
     }
 
     const totalCart = () =>{

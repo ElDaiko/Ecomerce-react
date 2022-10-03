@@ -1,12 +1,8 @@
 import { React } from 'react';
 import UseCont from '../../hooks/useCont';
-/* import { FaRedo, FaCheckCircle } from 'react-icons/fa';
-import { useCart } from '../context/CartContext'; */
-
-const ItemCount = ({ producto, setStock, stock, onSave }) => {
+const ItemCount = ({setStock, stock, onSave }) => {
 
     const { add, sub, cont } = UseCont(stock)
-    /* const {removeItem} = useCart() */
     
     function onAdd(cont) {
         if (stock >= 1 && cont <= stock) {
