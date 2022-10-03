@@ -1,7 +1,7 @@
 import { React} from 'react';
 import Item from './Item';
 
-const itemList = ({productos}) => {
+const ItemList = ({productos}) => {
     return (
         <div className='cardcontainer2'>         
             {productos.map((item) => (<Item key={item.id} producto={item} />))}   
@@ -10,4 +10,4 @@ const itemList = ({productos}) => {
 }
 
 
-export default itemList;
+export default ItemList;
