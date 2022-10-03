@@ -2,13 +2,13 @@ import React from 'react'
 import { useState } from 'react';
 import Navbar from '../Navbar/Navbar';
 import { useCart } from '../context/CartContext';
-import { addDoc, collection } from 'firebase/firestore';
+import { addDoc, collection} from 'firebase/firestore';
 import { db } from '../../firebase/firebase';
 import { Link } from 'react-router-dom';
 
 export const Checkout = () => {
     const [orderId, setOrderId] = useState();
-    const { cart, totalCart, clear } = useCart()
+    const { cart, totalCart} = useCart()
     const [buyer, setBuyer] = useState({
         name: '',
         email: '',
@@ -33,6 +33,15 @@ export const Checkout = () => {
             console.log(error)
         }
     }
+/* 
+    const actStock = async (items) => {
+        try {
+            const productos = categoria ? query(collection(db, "Bendu"), where("categoria", "==", categoria)) :collection(db, "Bendu")
+            updateDoc(items)
+        } catch (error) {
+            console.log(error)
+        }
+    } */
 
     const handleSubmit = (form) => {
         form.preventDefault()
@@ -42,6 +51,7 @@ export const Checkout = () => {
         const data = { buyer, items, dia, total }
         console.log(data);
         generateOrder(data)
+        /* actStock(items) */
     }
 
     return (
