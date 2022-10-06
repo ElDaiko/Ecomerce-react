@@ -398,5 +398,36 @@ h2 {
   text-align: center;
 }
 
+.decoration{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  margin-top: 15%;
+}
 
+.decoration:hover{
+  color: black;
+}
 
+.text-final {
+  font-family: Nikumaru;
+  font-size: 50px;
+  color: black;
+}
+
+.btn2:hover{
+  color: black;
+}
+
+.loader {
+  left: 51.2%;
+  margin-left: -4em;
+  margin-top: 15%;
+}
+
+.text-loader{
+  font-family: Nikumaru;
+  font-size: 50px;
+  color: black;
+  text-align: center;
+}

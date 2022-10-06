@@ -22,16 +22,21 @@ const Cart = () => {
                     )}
                     <div>
                         <h4>Total: {totalCart()} </h4>
-                        <Link to = "/checkout" >
+                        <Link to="/checkout" >
                             <button>Buy</button>
                         </Link>
-                        <button onClick={() => clear()}>Clear Cart</button>      
+                        <button onClick={() => clear()}>Clear Cart</button>
                     </div>
                 </div>
-                : <Link to="/">
-                    <button className='card btn'>
-                        Explore our products!
-                    </button>
+                : <Link className='decoration' to="/">
+                    <div>
+                        <h1 className='decoration'>
+                            Explore our products!
+                        </h1>
+                        <p className="text-final">
+                            日本の文化
+                        </p>
+                    </div>
                 </Link>
             }</>
 

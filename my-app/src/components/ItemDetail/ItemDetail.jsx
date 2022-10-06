@@ -36,11 +36,11 @@ const ItemDetail = ({ details }) => {
                 {!save ?
                 <div> <ItemCount producto={details} setStock={setStock} stock={stock} onSave={onSave} /></div>
                 : <div>
-                    <Link to="/cart">
-                        <button className=''>Go to Cart</button>
+                    <Link className='btn2' to ="/cart">
+                        <p>Go to Cart</p>
                     </Link>
-                    <Link to="/">
-                        <button onClick={() => setSave(false)}>Continue buying</button>
+                    <Link className='btn2' to="/">
+                        <p onClick={() => setSave(false)}>Continue buying</p>
                     </Link>
             </div>}
             </div>
